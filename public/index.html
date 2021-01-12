@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+		<link href="../css/styles.css" rel="stylesheet">
+		<title>Proyecto NUR-TECH</title>
+	</head>
+	<body>
+			
+		<header class="w-2x1 px-6 bg-gray-900 py-0">
+			<div class="container mx-auto max-w-4xl md:flex justify-between items-center bg-gray-900">
+				<a href="#" class="block py-6 w-full text-center md:text-left md:w-auto text-gray-600 no-underline justify-center items-center">
+					<ul class="left-bar-side">
+						<li>
+							<p class="font-lora text-gray-400">Equipamos el futuro hoy.</p>
+						</li>
+					  </ul>		  
+				</a>
+			</div>
+		</header>
+		
+		<header class="w-full px-6 bg-white py-6">
+			<div class="container mx-auto max-w-4xl md:flex justify-between items-center bg-white ">
+				<div> 
+					<a href="#."><img src="../img/logo_nur_tech.png" alt="" id="dos"></a> </div>
+				
+			</a>
+				<div class="w-full md:w-auto mb-6 md:mb-0 text-center md:text-right">
+					<a href="#" class="inline-block no-underline text-white text-sm py-2 ransition duration-500 ease-in-out bg-black  hover:text-red transform hover:-translate-y-1 hover:scale-110 px-10">♡ DONA UN COMPUTADOR</a>
+				</div>
+			</div>
+		</header>
+
+		
+		<nav class="w-full bg-yellow-400 md:pt-0 px-4 shadow-lg relative z-20 ">
+			<div class="container mx-auto max-w-8xl md:flex items-center text-sm md:text-md bg-yellow-400">
+				<div class="w-full md:w-1/2 text-center md:text-left py-4 flex flex-wrap justify-center items-stretch md:justify-start md:items-start bg-yello-400">
+					<a href="#" class="px-2 md:pl-0 md:mr-2 md:pr-2 text-black hover:text-white hover:bg-black  no-underline md:border-r border-black">HOME</a>
+					<a href="#" class="px-2 md:pl-0 md:mr-2 md:pr-2 text-black hover:text-white hover:bg-black  no-underline md:border-r border-black">EL PROYECTO</a> 
+					<a href="#" class="px-2 md:pl-0 md:mr-2 md:pr-2 text-black hover:text-white hover:bg-black  no-underline md:border-r border-black">COMO AYUDAR</a> 
+					<a href="#" class="px-2 md:pl-0 md:mr-2 md:pr-2 text-black hover:text-white hover:bg-black  no-underline md:border-r border-black">VOLUNTARIOS</a> 
+					<a href="#" class="px-2 md:pl-0 md:mr-2 md:pr-2 text-black hover:text-white hover:bg-black  no-underline md:border-r border-black">DONANTES</a> 
+					<a href="#" class="px-2 md:pl-0 md:mr-2 md:pr-2 text-black hover:text-white hover:bg-black  no-underline">CONTACTO</a>
+				</div>
+			</div>
+		</nav>
+			
+			<div class="slideshow-container">
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="../img/slide_2.png" >
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="../img/slide_3.png" >
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="../img/slide_4.png"  >
+			  
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+		>
+			
+		
+		
+		<div class="w-full px-6 py-12 bg-white">
+			<div class="container max-w-4xl mx-auto text-center pb-10">
+				
+				<h3 class="text-xl md:text-3xl leading-tight text-center max-w-md mx-auto text-gray-900 mb-12">
+					¿QUÉ ES NUR TECH?
+				</h3>
+			</div>
+
+			<div class="container max-w-4xl mx-auto text-center flex flex-wrap items-start md:flex-no-wrap ">
+				
+				<div class="my-4 w-full md:w-1/3 flex flex-col  items-center justify-center px-4 transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110">
+					<img src="../img/slide_5.png" class="w-full h-64 object-cover mb-6" />
+
+				</div>
+				
+				<div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center  px-4  transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110">
+					<p style="text-align: justify;">
+					A causa del COVID 19, con el objetivo de precautelar la salud de estudiantes y docentes, las autoridades determinaron el cambio de modalidad educativa de presencial a virtual. 
+						<br><br> En consecuencia, muchas familias se enfrentaron a esta nueva situación no siempre contando con computadores en sus hogares.
+						<br><br>NUR TECH es un proyecto que tiene como objetivo entregar computadores refaccionados a estudiantes de Institutos Tecnológicos Superiores de Quito y sus familias que al momento no disponen de equipos propios.
+						</p>
+				</div>
+				
+				<div class="my-4 w-full md:w-1/3 flex flex-col items-center bg-yellow justify-center px-4  transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110">
+					<p style="text-align: justify;">
+					El proyecto es gestionado por un grupo de voluntarios que son docentes del IST Benito Juárez y activistas locales.
+				</p>
+				<p style="text-align: justify;"> <BR>
+						Nuestro proceso tiene tres pasos: recolectar,acondicionar y entregar. <BR><BR>
+						En el primer paso nos ponemos en contacto con las personas que desean donar equipos, y se define una cita para recolectar el equipo a domicilio; como segundo paso todos los equipos son acondicionados: se borran sus discos duros, se revisan los componentes, se cambian partes y piezas si hace falta. <BR><BR>
+						Finalmente se hace la entrega del computador refaccionado en el domicilio del estudiante.
+				</p>
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="container max-w-4xl mx-auto text-center pb-10">
+				
+			<h3 class="text-xl md:text-3xl leading-tight text-center max-w-md mx-auto text-gray-900 mb-12">
+				¿CÓMO PUEDO AYUDAR?
+			</h3>
+		</div>
+
+		<div class="container max-w-4xl mx-auto text-center flex flex-wrap items-start md:flex-no-wrap ">			
+			<div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center  px-4  transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110">
+				<BR><BR>
+				<p>Buscamos computadores usados, partes y repuestos para entregarlos a estudiantes del IST YAVIRAC que no disponen al momento de equipos propios.</p>
+			</div>		
+		
+			<div class="my-4 w-full md:w-1/3 flex flex-col items-center bg-yellow justify-center px-4  transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110">
+				<img src="../img/Captura.PNG" class="w-full h-64 object-cover mb-6" id="tres"/>
+			</div>
+
+			<div class="my-4 w-full md:w-1/3 flex flex-col items-center bg-yellow justify-center px-4  transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110">
+				<img src="../img/donante_20201226_183410.jpg" class="w-full h-64 object-cover mb-6" id="cuatro"/>
+			</div>
+		</div>
+	</div>
+	
+		<br><br><br><br><br><br><br><br>
+		<footer class="w-full h-4/5 bg-black px-6 border-t">
+			<div class="container mx-auto  py-1 flex flex-wrap md:flex-no-wrap justify-between items-center text-white text-sm">
+              <p>Dirección: Ambato y Garcia Moreno, Campus IST YAVIRAC</p> <br><br>
+              <p>Teléfono : (593) 999 705 620</p> <br><br>
+			  <p>Email : probayo@yavirac.edu.ec</p> 
+			  <br><br>
+			  <br><br>
+			  <br><br>
+			  <p>&copy;2021 DERECHOS RESERVADOS NUR-TECH.</p> 
+			</div>
+		</footer>
+	</body>
+</html>
